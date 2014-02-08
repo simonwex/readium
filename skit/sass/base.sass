@@ -1,0 +1,23 @@
+@import config.sass
+@import reset.sass
+@import library.sass
+@import font.sass
+
++font-droid
++font-aller
+
+// SMARTPHONES
+@media screen and (max-width: 480px)
+    +container($responsiveSmartphoneWidth, 12, $containerPosition)
+
+// TABLETS
+@media screen and (min-width: 768px) and (max-width: 959px)
+    +container($responsiveTabletWidth, 12, $containerPosition)
+
+// DESKTOP
+@media screen and (min-width: 960px) and (max-width: 1199px)
+    +container($responsiveDesktopWidth, 12, $containerPosition)
+
+// LARGE
+@media screen and (min-width: 1200px)
+    +container($responsiveDesktopLargeWidth, 12, $containerPosition)
